@@ -5,7 +5,7 @@ Design a simple login screen, dashboard screen. Added splash screen only for IO
 1. Add Splash screen for android.
 2. Add stack navigation.
 
-#Screenshots:
+# Screenshots:
 </br>
 ![SplashScreen](https://github.com/hiteshborse12/ReactNativeLogin/blob/main/screenShots/1_Splash.png)
 ![LoginScreen](https://github.com/hiteshborse12/ReactNativeLogin/blob/main/screenShots/2_Login.png)
