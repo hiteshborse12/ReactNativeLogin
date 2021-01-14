@@ -5,9 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './Home'
 export default function TabView() {
   return (
-    <NavigationContainer>
       <CustomTab />
-    </NavigationContainer>
   );
 }
 const Tab = createBottomTabNavigator();
@@ -16,18 +14,18 @@ function CustomTab() {
     <Tab.Navigator screenOptions={({ route }) => ({
       tabBarIcon: ({ focused, color, size }) => {
         let iconName;
-        // if (route.name === 'Home') {
-        //   iconName = require('./home.png')
-        // } else if (route.name === 'About') {
-        //   iconName = require('./home.png')
-        // }
-        // else if (route.name === 'Settings') {
-        //   iconName = require('./home.png')
-        // }
         iconName = require('./home.png')
+        if (route.name === 'Home') {
+          iconName = require('./home.png')
+        } else if (route.name === 'About') {
+          iconName = require('./about.png')
+        }
+        else if (route.name === 'Settings') {
+          iconName = require('./setting.png')
+        }
         // You can return any component that you like here!
       let tintcolor = focused ? 'red':'gray'
-      return <Image source={iconName} style={{width: 20, height: 25,margin:2, tintColor:tintcolor}}/>;
+      return <Image source={iconName} style={{width: 22, height: 22,margin:2, tintColor:tintcolor}}/>;
       },
     })}
     tabBarOptions={{

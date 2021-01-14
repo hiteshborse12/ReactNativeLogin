@@ -20,17 +20,20 @@ export default class login extends Component {
 
 }
   onloginPressButton = () => {
-    alert('Email: ' + this.state.emailtext + ' Password: ' + this.state.passwordtext)
-  }
-  onloginPressButton = () => {
-    alert('Email: ' + this.state.emailtext + ' Password: ' + this.state.passwordtext)
+    if (this.state.emailtext.length <= 0 || this.state.passwordtext.length <= 0){
+      alert('Enter email and password')
+    
+    }
+    else {
+      this.props.navigation.navigate('TabView')
+    }
+
   }
   onSignUpPressButton() {
   }
 
   render() {
     return (
-
       <View style={styles.container}>
         <Text style={styles.header}>Welcome</Text>
         <View style={styles.inputViewBg} >
