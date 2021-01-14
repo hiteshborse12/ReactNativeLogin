@@ -1,9 +1,11 @@
 # ReactNativeLogin
-Design a simple login screen, dashboard screen. Added splash screen only for IOS.
+- Design a simple login screen. 
+- Design dashboard screen. 
+- Added splash screen only for iOS.
+- Implemented stack navigation.
 
 # TODO:
 1. Add Splash screen for android.
-2. Add stack navigation.
 
 # Screenshots:</br>
 
