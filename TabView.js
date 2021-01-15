@@ -3,6 +3,7 @@ import { Text, View, StyleSheet, Image} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './Home'
+import Setting from './Setting'
 export default function TabView() {
   return (
       <CustomTab />
@@ -35,7 +36,7 @@ function CustomTab() {
   >
       <Tab.Screen name="Home" component={Home}/>
       <Tab.Screen name="About" component={AboutTab} />
-      <Tab.Screen name="Settings" component={SettingTab} />
+      <Tab.Screen name="Settings" component={Setting} />
     </Tab.Navigator>
   );
 }
